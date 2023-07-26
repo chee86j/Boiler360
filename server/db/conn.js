@@ -1,10 +1,12 @@
-const Sequelize = require('sequelize');
-const config = {
-};
+const Sequelize = require("sequelize");
+const config = {};
 
-if(process.env.QUIET){
+if (process.env.QUIET) {
   config.logging = false;
 }
-const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost/acme_shopping_db', config);
+const conn = new Sequelize(
+  process.env.DATABASE_URL || "postgres://localhost/boiler360",
+  config
+);
 
 module.exports = conn;
