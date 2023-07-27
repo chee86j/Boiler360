@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "build:dev": "npm run build -- --watch --mode=development",
+    "build:dev": "tailwindcss build styles.css -o dist/styles.css --watch --mode=development",
     "test": "JWT=shhhhh mocha",
     "test:dev": "DATABASE_URL=postgres://localhost/boiler360 npm run test -- --watch",
     "test:dev:quiet": "QUIET=true npm run test:dev",
@@ -56,7 +56,7 @@
     "babel-loader": "^9.0.0",
     "chai": "^4.3.6",
     "css-loader": "^6.8.1",
-    "daisyui": "^3.0.20",
+    "daisyui": "^3.5.0",
     "mocha": "^10.1.0",
     "nodemon": "^2.0.20",
     "postcss": "^8.4.24",
@@ -71,7 +71,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "supertest": "^6.3.1",
-    "tailwindcss": "^3.3.2",
+    "tailwindcss": "^3.3.3",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }
