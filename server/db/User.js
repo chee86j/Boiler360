@@ -3,6 +3,7 @@ const { JSON, STRING, UUID, UUIDV4, TEXT, BOOLEAN } = conn.Sequelize;
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const JWT = process.env.JWT || "felix";
+const axios = require("axios");
 
 const User = conn.define("user", {
   id: {
